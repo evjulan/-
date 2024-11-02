@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/logo-ellipse.png">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+    
+
+<style>
+
+.bg-light {
+    background-color: #C5C0C9 !important;
+}
+
+.bg-light h2 {
+    font-size: 54px;
+    font-style: italic;
+    color: #24193F;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.bg-light container we {
+  margin-left: 100px;
+}
+
+.bg-light h3, p {
+    font-style: italic;
+    color: #24193F;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero-section {
+    background: linear-gradient(transparent 65%, #C5C0C9 35%), 
+    url('img/border-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #DFE0E5;
+    position: relative;
+    min-height: 100vh;
+    padding: 20px;
+    
+}
+
+.hero-section h1 {
+    font-size: 80px; /* Основной размер шрифта для настольных экранов */
+    text-align: center; /* Центрирование текста */
+    max-width: 1140px; /* Ограничение ширины, аналогичное промо-контейнеру и меню */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding-left: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 200px); /* Подгонка по высоте, чтобы текст располагался между блоками */
+}
+
+/* Адаптация на мобильных устройствах */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 48px; /* Уменьшенный размер шрифта для мобильных экранов */
+        height: calc(100vh - 150px); /* Подгонка по высоте */
+        /* padding: 20px; Добавим внутренние отступы для улучшения визуального вида */
+    }
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px; /* Стандартный размер шрифта для мобильной версии */
+}
+
+/* Увеличение размера шрифта для настольных устройств */
+@media (min-width: 992px) { /* Настройки для экранов шире 992px (для настольной версии) */
+    .navbar-nav .nav-link {
+        font-size: 30px; /* Увеличенный размер шрифта для десктопа */
+    }
+}
+
+/* Стиль для фиолетового блока */
+.promo {
+    width: 90%;
+    max-width: 1140px; /* Ограничение ширины */
+    background-color: #4D3F72;
+    padding: 40px;
+    margin: 0 auto; /* Центрирование */
+    box-sizing: border-box;
+    position: relative;
+    /* transform: translateY(20%); Подгонка по высоте */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+  width: 90%;
+    max-width: 1140px; /* Ограничение ширины */
+    background-color: #C5C0C9;
+    padding: 40px;
+    margin: 0 auto; /* Центрирование */
+    box-sizing: border-box;
+    position: relative; 
+}
+
+.service img {
+  width: 90%; 
+  max-width: 500px; 
+  height="auto";
+}
+
+.service h2, h3, p {
+  text-align: center;
+  color: #4D3F72;
+}
+/* Центровка линии внутри promo */
+.line {
+    height: 1px;
+    width: 70%;
+    background-color: #C5C0C9;
+    margin: 20px auto; /* Центрирование */
+}
+
+.line2 {
+    height: 1px;
+    width: 70%;
+    background-color: #24193F;
+    margin: 20px auto; /* Центрирование */
+}
+
+/* Настройка текста */
+.hero-section h1,
+.hero-section p,
+.hero-section h2 {
+    color: hsl(230, 10%, 89%);
+}
+
+.hero-section h1 {
+    height: 300px;
+}
+
+.btn-appointment {
+    display: inline-block;
+    width: 367px;
+    height: 75px;
+    background-color: #8A7C9C;
+    color: #DFE0E5;
+    font-size: 36px;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* margin-top: calc((100vh - 200px) / 3); */
+    /* margin-left: 15px; */
+}
+
+/* Стили при нажатии */
+.btn-appointment:active {
+    background-color: #4D3F72; /* Цвет кнопки при нажатии */
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .promo {
+        width: 90%; /* Увеличение ширины на мобильных */
+        padding: 30px;
+}
+
+
+
+
+
+      body {
+        background-color: #C5C0C9;  
+        font-family: 'Philosopher', sans-serif;
+      }
+
+      }
+
+      .line {
+        height: 1px;
+        width: 70%;
+        background-color:#C5C0C9;
+        background-position: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+      }
+
+      .advantages {
+        width: 613px;
+        height: 273px;
+        background-color: #DFE0E5;
+        margin: 20px;
+        text-align: center;
+        line-height: 75px;
+        border-radius: 20px;
+        text-decoration: none;
+
+        @media (max-width: 768px) { /* Настройки для экранов шире 992px (для настольной версии) */
+        width: 337px;
+        height: 200px; /* Увеличенный размер шрифта для десктопа */
+    }
+
+      }
+
+      .zero {
+        height: 100px;
+      }
+
+      .we {
+        width: 613px;
+        height: 200px;
+        margin: 20px;
+        text-align: left;
+        line-height: 75px;
+        border-radius: 20px;
+        text-decoration: none;
+      }
+
+      .wwe {
+        width: 613px;
+        height: 150px;
+        margin: 20px;
+        text-align: left;
+        line-height: 75px;
+        border-radius: 20px;
+        text-decoration: none;
+      }
+
+      .col-md-4 {
+        margin-top: 40px;
+      }
+
+      .button {
+        margin-top: 40px;
+      }
+
+      /* Стили для кнопки открытия модального окна */
+.open-modal-btn {
+    padding: 10px 20px;
+    background-color: #8A7C9C;
+    color: #DFE0E5;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Стили модального окна */
+.modal {
+    display: none; /* По умолчанию скрыто */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Контент модального окна */
+.modal-content {
+    background-color: #C5C0C9;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Кнопка закрытия */
+.close {
+    color: #8A7C9C;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Логотип */
+.logo {
+    margin-bottom: 20px;
+}
+
+/* Стили для полей формы */
+.modal-content input[type="text"],
+.modal-content input[type="tel"],
+.modal-content textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Стили для текстовой области */
+.modal-content textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Чекбокс */
+.modal-content label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #24193F;
+}
+
+/* Кнопка отправки */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4D3F72;
+    color: #DFE0E5;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #8A7C9C;
+}
+
+
+
+      .footer {
+        background-color: #DFE0E5;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .section {
+        padding: 60px 0;
+        background-color: #C5C0C9 !important;
+      }
+
+      .btn-custom {
+        background-color: #24193F;
+        color: #DFE0E5;
+        border: none;
+      }
+
+    </style>
+        
+    <title>Спа центр Этерия</title>
+  </head>
+  <body>
+      <!-- Общий контейнер с фоновым изображением -->
+      <div class="hero-section">
+          
+          <!-- Бургерное меню -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container">
+                  <a class="navbar-brand" href="#">
+                      <img src="img/logo-grey.png" alt="Этерия" width="auto" height="45">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+          
+          <!-- Баннер с заголовком -->
+          <header class="container text-center py-5"> <!-- Контейнер для выравнивания заголовка -->
+            <h1>Этерия — ваш остров гармонии и спокойствия</h1>
+            <a href="#appointment" class="btn-appointment" onclick="openModal()" class="open-modal-btn">Записаться</a>
+        </header>
+          
+          <!-- Блок О нас -->
+          <section id="about" class="text-center py-5">
+              <div class="container promo">
+                  <h2>Добро пожаловать в "Этерия"</h2>
+                  <div class="line"></div>
+                  <p>«Этерия» — это пространство гармонии и заботы, где каждый гость может превратиться в атмосферу покоя и красоты, забыв о повседневной суете. Наши спа-процедуры, основанные на натуральных ингредиентах и ​​проверенных методах, направлены на восстановление, омоложение и достижение внутреннего баланса. Посетите «Этерию», чтобы насладиться искусством релаксации и обрести гармонию тела и души.</p>
+              </div>
+          </section>
+          
+      </div> 
+      <!-- Конец hero-section -->
+  
+  <!-- преимущества старт -->
+  <section id="services" class="section bg-light">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="container we">
+          <h2>Погрузитесь в мир расслабления с Этерией</h2>
+        </div>
+        <div class="container wwe">
+          <a href="#appointment" class="btn-appointment" onclick="openModal()" class="open-modal-btn">Записаться</a>
+        </div>
+        <div class="container wwwe">
+          <img src="img/table-with-purple-flowers-candles-it 1.png" alt="Погрузитесь в мир расслабления с Этерией" width="55%" height="">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="container advantages">
+          <img src="img/logo-ellipse.png" alt="Этерия" width="auto" height="45">
+          <h3>Индивидуальный подход</h3>
+          <p>Персонализированные процедуры, учитывающие все ваши пожелания, для максимального комфорта и пользы</p>
+        </div>
+        <div class="container advantages">
+          <img src="img/logo-ellipse.png" alt="Этерия" width="auto" height="45">
+          <h3>Профессиональная команда</h3>
+          <p>Опытные мастера создают атмосферу доверия и используют лучшие методы массажа и ухода</p>
+        </div>
+        <div class="container advantages">
+          <img src="img/logo-ellipse.png" alt="Этерия" width="auto" height="45">
+          <h3>Эко-дружественные ингредиенты</h3>
+          <p>натуральные средства для бережного ухода, обеспечения гармонии с природой и заботы о вас</p>
+        </div>
+      </div>
+      <!-- <div class="col-md-1"></div> -->
+    </div>
+  </section>
+
+  <!-- преимущества финиш -->
+
+  <section id="services" class="section bg-light">
+    <div class="container service">
+      <h2>Наши услуги и предложения</h2>
+      <div class="line2"></div>
+      <p>В «Этерии» мы предлагаем другие процедуры, направленные на восстановление, релаксацию и уход за собой. Все процедуры подбираются индивидуально, чтобы максимально соответствовать вашим предпочтениям и потребностям.</p>
+  </div>
+    <div class="service">
+      <div class="row">
+      <div class="col-md-6">
+        <img src="img/Group 1787.png" alt="Расслабляющие и лечебные массажи">
+      </div>
+      <div class="col-md-6">
+        <h3>Расслабляющие и лечебные массажи</h3>
+          <p>глубокие и мягкие методы снятия напряжения, улучшения кровообращения и восстановления баланса</p>
+      </div>
+    </div>
+    </div>
+    <div class="service">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Спа-ритуалы для тела</h3>
+            <p>скрабы, обертывания и ароматерапия, которые увлажняют кожу, делают ее мягкой и сияющей, и дарят ощущение свежести</p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/Group 1792.png" alt="Спа-ритуалы для тела">
+        </div>
+      </div>
+    </div>
+    <div class="service">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/Group 1789.png" alt="Уход за лицом">
+        </div>
+        <div class="col-md-6">
+          <h3>Уход за лицом</h3>
+            <p>комплексные программы очищения, питания и омоложения с использованием природных ингредиентов, чтобы кожа выглядела здоровой и сияющей</p>
+        </div>
+      </div>
+    </div>
+    <div class="service">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>СПА для рук и ног</h3>
+            <p>процедуры, включающие расслабляющие ванночки, массаж и уход за кожей и ногтями, дарящая лёгкость и обновление ваших рук и ног.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/Group 1790.png" alt="СПА для рук и ног">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Reviews Section Start -->
+    <section id="reviews" class="section">
+      <div class="container text-center">
+        <h2>Наши отзывы</h2>
+      <div class="line2"></div>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Анна:</h3>
+            <div class="line2"></div>
+            <p>«Этерия – это место, где я действительно отдыхаю. Приятная атмосфера и заботливые мастера делают каждое особое посещение. Кожа сияет, а душа спокойна!»</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Игорь:</h3>
+            <div class="line2"></div>
+            <p>"После массажа здесь чувствуешь себя как заново родившимся. Профессионалы своего дела! Всем рекомендую."</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Марина:</h3>
+            <div class="line2"></div>
+            <p>"Прекрасный спа-салон! Натуральные средства и невероятные процедуры. Чувствую себя обновленной после каждого визита."</p>
+          </div>
+        </div>
+        <div class="button">
+          <a href="#appointment" class="btn-appointment" onclick="openModal()" class="open-modal-btn">Записаться</a>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews Section Finish --> 
+
+  
+  
+    
+
+    <section id="contacts" class="section">
+      <div class="row">
+          <div class="col-md-7 mt-3 pr-5">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A19fff1e86f12cf05bb88f6b3c572961afdfdcde20f1cc7540ea1ed8002bd9e99&amp;width=582&amp;height=441&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+          <div class="col-md-5">
+              <span>Адрес:</span>
+              <p>Москва, Большой Овчинниковский переулок, 12с1</p>
+              <span>Телефон:</span>
+              <p><a href="tel:+74952252525">+7 (495) 225-25-25</a></p>
+              <span>Email:</span>
+              <p><a href="mailto:eteria@eteria.com">eteria@eteria.com</a></p>
+              <span>График работы:</span>
+              <p>Пн-Вс: 10:00-22:00</p>
+          </div>
+    </section>
+  
+  
+  <!-- Footer start -->
+   <footer class="wrapper">
+   <section class="container-fluid py-5 text-center footer" >
+      Все права защищены. ООО Этерия. &copy; <script>document.write(new Date (). getFullYear())</script>
+   </section>
+   </footer>
+
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="img/logo-plame.png" alt="Logo" class="logo">
+    <form action="#" method="post">
+      <input type="text" placeholder="имя" required>
+      <input type="tel" placeholder="телефон" required>
+      <textarea placeholder="комментарии"></textarea>
+      <button type="submit" class="submit-btn">отправить</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/907d5c148a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script>
+    
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+  }
+  
+  // Функция для закрытия модального окна
+  function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+  }
+  
+  // Закрытие модального окна при клике вне его
+  window.onclick = function(event) {
+      let modal = document.getElementById("myModal");
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+
+  </body>
+</html>
